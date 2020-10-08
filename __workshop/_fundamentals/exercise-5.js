@@ -85,9 +85,40 @@ const staffMembers = [
   },
 ];
 
+// const getData = (arr, key, val) => {
+//   let selectedStaff = [];
+//   arr.forEach(function(person) {
+//     if (key === "name" && person.name === val) {
+//       selectedStaff.push(person);
+//     } else if (key === "title" && person.title === val) {
+//       selectedStaff.push(person);
+//     } else if (key === "javascript" && person.skillLevels.javascript >= val) {
+//       selectedStaff.push(person);
+//     } else if (key === "python" && person.skillLevels.python >= val) {
+//       selectedStaff.push(person);
+//     } else if (key === "sql" && person.skillLevels.sql >= val) {
+//       selectedStaff.push(person);
+//     }
+//   });
+//   console.log(selectedStaff);
+//   return selectedStaff;
+// };
+
 const getData = (arr, key, val) => {
-  // return something
+  let selectedStaff = [];
+  arr.forEach(function(staffMember) {
+    if (staffMember[key] == val) {
+      selectedStaff.push(staffMember);
+    } else if (staffMember.skillLevels[key] >= val) {
+      selectedStaff.push(staffMember);
+    }
+  });
+  return selectedStaff;
 };
+
+
+
+
 
 // 2. Do a console.log to verify your function.
 
