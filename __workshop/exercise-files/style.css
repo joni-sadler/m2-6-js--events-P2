@@ -1,1 +1,110 @@
 /* add css here */
+
+.wrapper {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    /* vertical-align: baseline; */
+    font-family: "Jost";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  .field-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+  }
+ 
+  form {
+      margin: 32px;
+      max-width: 475px;
+      padding: 24px;
+      background-color: white;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  }
+
+  label {
+      padding: 10px 0px;
+      font-size: 15px;
+  }
+
+  input {
+      padding: 5px 0px;
+      margin-top: 5px;
+  }
+
+  .terms-and-conditions {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 40px 0px;
+      display: flex;
+  }
+
+  footer {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  button {
+      color: white;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 5px;
+      font-family: "Jost";
+      font-weight: 600;
+      font-size: 14px;
+  }
+
+  .clear-button {
+      background-color: hsl(333deg, 100%, 44%);
+      margin: 0px 50px 0px 0px;
+  }
+
+  .submit-button {
+      background-color: hsl(256deg, 100%, 44%);
+      margin: 0px 0px 0px 50px;
+  }
+
+  .pink-error-message {
+      display: none;
+  }
+
+  .error-visible {
+      display: block;
+      background-color: pink;
+      padding: 10px 40px;
+      margin-bottom: 40px;
+      font-size: 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 800;
+      font-family: "Jost";
+  }
+
+  .red-outline {
+      border: 3px solid red;
+      border-radius: 5px;
+  }
+
+  .red-outline:focus {
+      box-shadow: 0px 0px 5px blue;
+  }

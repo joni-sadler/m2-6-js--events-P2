@@ -117,9 +117,6 @@ const getData = (arr, key, val) => {
 };
 
 
-
-
-
 // 2. Do a console.log to verify your function.
 
 // 3. Run the test to validate: yarn test exercise-5
