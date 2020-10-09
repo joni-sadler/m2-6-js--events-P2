@@ -57,6 +57,8 @@
       border-radius: 5px;
       margin: 40px 0px;
       display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   footer {
